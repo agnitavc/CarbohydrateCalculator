@@ -36,7 +36,12 @@ public class ExampleTest{
         carbohydrateCalculatorPage.inputHeight(165);
         carbohydrateCalculatorPage.inputWeight(100);
         carbohydrateCalculatorPage.clickCalculateButton();
-        List<String> expectedGoalList =List.of("Weight Maintenance","Lose 0.5 kg/week","Lose 1 kg/week","Gain 0.5 kg/week","Gain 1 kg/week");
+        List<String> expectedGoalList =List.of(
+                "Weight Maintenance",
+                "Lose 0.5 kg/week",
+                "Lose 1 kg/week",
+                "Gain 0.5 kg/week",
+                "Gain 1 kg/week");
         List<String> actualGoalList = carbohydrateCalculatorPage.getResult();
         Assert.assertEquals(actualGoalList,expectedGoalList);
     }
