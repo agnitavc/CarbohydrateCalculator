@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import java.time.Duration;
+
 
 public class BaseUtils {
 
@@ -20,6 +22,7 @@ public class BaseUtils {
             baseDriver = new EdgeDriver();
         }
         baseDriver.manage().window().maximize();
+        baseDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     //Navigate to URL
