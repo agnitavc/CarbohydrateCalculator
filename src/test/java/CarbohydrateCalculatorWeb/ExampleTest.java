@@ -28,7 +28,7 @@ public class ExampleTest{
         Assert.assertEquals(pageTitle,"Carbohydrate Calculator");
     }
 
-    @Test(description = "Verify calculation with minimum valid age value.")
+    @Test(description = "Verify result is displayed with minimum valid age value.")
     public void verifyCalculationWithMinAgeValue(){
         CarbohydrateCalculatorPage carbohydrateCalculatorPage = new CarbohydrateCalculatorPage();
         carbohydrateCalculatorPage.clickClearButton();
