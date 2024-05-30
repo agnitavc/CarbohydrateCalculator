@@ -71,4 +71,7 @@ public class CarbohydrateCalculatorPage extends BaseUtils {
         return table_data_Goal.stream().map(WebElement::getText).collect(Collectors.toList());
     }
 
+    public boolean verifyInputElementsAreDisplayed(){
+        return (input_age.isDisplayed() && input_height.isDisplayed() && input_weight.isDisplayed());
+    }
 }
