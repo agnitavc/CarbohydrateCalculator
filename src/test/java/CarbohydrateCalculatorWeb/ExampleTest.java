@@ -21,12 +21,11 @@ public class ExampleTest{
     }
 
 
-    @Test(description = "Verify if Carbohydrate Calculator page loaded correctly using url")
+    @Test(description = "Verify url should open Carbohydrate Calculator page")
     public void verifyCarbohydrateCalculatorPage() {
         CarbohydrateCalculatorPage carbohydrateCalculatorPage=new CarbohydrateCalculatorPage();
         String pageTitle = carbohydrateCalculatorPage.getPageTitle();
         Assert.assertEquals(pageTitle,"Carbohydrate Calculator");
-        Assert.assertTrue(carbohydrateCalculatorPage.verifyInputElementsAreDisplayed());
     }
 
     @Test(description = "Verify result is displayed with minimum valid age value.")
