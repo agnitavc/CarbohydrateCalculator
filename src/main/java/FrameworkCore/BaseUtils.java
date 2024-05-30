@@ -22,7 +22,7 @@ public class BaseUtils {
             baseDriver = new EdgeDriver();
         }
         baseDriver.manage().window().maximize();
-        baseDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        baseDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     }
 
     //Navigate to URL
@@ -39,6 +39,5 @@ public class BaseUtils {
     public void closeAllBrowser(){
         baseDriver.quit();
     }
-
 
 }
